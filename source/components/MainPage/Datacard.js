@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import Entypo from 'react-native-vector-icons/Entypo';
 
 const Datacard = () => {
   const handleButtonClick = () => {
@@ -16,7 +17,12 @@ const Datacard = () => {
           <TouchableOpacity
             style={styles.sideButton}
             onPress={handleButtonClick}>
-            <Text style={styles.sideButtonText}>{'>'}</Text>
+            <Entypo
+              style={styles.sideButtonText}
+              name="chevron-right"
+              size={24}
+              color={'#fff'}
+            />
           </TouchableOpacity>
         </View>
         <View style={styles.box}>
@@ -25,7 +31,12 @@ const Datacard = () => {
           <TouchableOpacity
             style={styles.sideButton}
             onPress={handleButtonClick}>
-            <Text style={styles.sideButtonText}>{'>'}</Text>
+            <Entypo
+              style={styles.sideButtonText}
+              name="chevron-right"
+              size={24}
+              color={'#fff'}
+            />
           </TouchableOpacity>
         </View>
       </View>
@@ -36,7 +47,12 @@ const Datacard = () => {
           <TouchableOpacity
             style={styles.sideButton}
             onPress={handleButtonClick}>
-            <Text style={styles.sideButtonText}>{'>'}</Text>
+            <Entypo
+              style={styles.sideButtonText}
+              name="chevron-right"
+              size={24}
+              color={'#fff'}
+            />
           </TouchableOpacity>
         </View>
         <View style={styles.box}>
@@ -88,7 +104,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 0,
     right: 0,
-    width: 20,
+    width: 15,
     height: '100%',
     backgroundColor: '#7B61FF',
     borderTopRightRadius: 20,
@@ -98,7 +114,7 @@ const styles = StyleSheet.create({
     zIndex: 1, // Increase the zIndex to make it clickable
   },
   sideButtonText: {
-    fontSize: 20,
+    fontSize: 18,
     color: 'white',
   },
 });

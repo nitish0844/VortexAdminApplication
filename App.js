@@ -186,7 +186,7 @@ const App = () => {
               } else if (route.name === 'Paymenttab') {
                 iconName = 'person-add-outline';
                 iconComponent = (
-                  <Ionicons name={iconName} size={25} color={color} />
+                  <Ionicons name={iconName} size={23} color={color} />
                 );
               } else if (route.name === 'ProfileTab') {
                 iconName = 'user';
