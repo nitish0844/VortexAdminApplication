@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "263759663560",
+    "firebase_url": "https://gautham-courses-default-rtdb.firebaseio.com",
+    "project_id": "gautham-courses",
+    "storage_bucket": "gautham-courses.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263759663560:android:5374d419725c6f533db0fd",
+        "android_client_info": {
+          "package_name": "com.vortexfitness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263759663560-juoptgpg7l6ckqqn9lq5h3lcl0jnp8en.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vortexfitness",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "263759663560-26s5oggepamk6l9m6qvth7e81tda7g34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSA53-QyQhN9wBEexcvCcfPWeQj6X2SCU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263759663560-18mna73t8p2uqfrgcva7tdb109nh2e3e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "263759663560-kq8p9pnqa3qjjhid31bn6mn0cmts10rn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vortexfitness"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263759663560:android:a210a9cc23a44fef3db0fd",
+        "android_client_info": {
+          "package_name": "com.vortexfitnessadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263759663560-f49nvkf3gm819cgdcjfm54hgj8lnar5p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vortexfitnessadmin",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "263759663560-26s5oggepamk6l9m6qvth7e81tda7g34.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSA53-QyQhN9wBEexcvCcfPWeQj6X2SCU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263759663560-18mna73t8p2uqfrgcva7tdb109nh2e3e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "263759663560-kq8p9pnqa3qjjhid31bn6mn0cmts10rn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vortexfitness"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

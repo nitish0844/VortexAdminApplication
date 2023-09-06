@@ -74,7 +74,7 @@ const Calender = () => {
         justifyContent: 'center', // Vertically center content
         alignItems: 'center', // Horizontally center content
         backgroundColor: '#000', // Set background color
-        bottom: '42%',
+        bottom: '5%',
         width: '100%',
         alignSelf: 'center',
       }}>

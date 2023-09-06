@@ -1,7 +1,7 @@
 import {View, Text} from 'react-native';
 import React, {useEffect} from 'react';
 import MainScreen from './source/screens/TabScreens/MainScreen';
-import AddMember from './source/screens/TabScreens/AddMember';
+import AddMember from './source/screens/TabScreens/AddMemberTab';
 import ProfileTab from './source/screens/TabScreens/ProfileTab';
 import AttendanceTab from './source/screens/TabScreens/AttendanceTab';
 import {NavigationContainer} from '@react-navigation/native';

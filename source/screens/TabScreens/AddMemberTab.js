@@ -8,9 +8,8 @@ import {
   StatusBar,
 } from 'react-native';
 import {useFocusEffect} from '@react-navigation/native';
-import Calender from '../../components/AttendencePage/Calender';
-import Header from '../../components/AttendencePage/Header';
-import PresentAbsenceLog from '../../components/AttendencePage/PresentAbsenceLog';
+import Header from '../../components/AddMembers/Header';
+import DetailForm from '../../components/AddMembers/DetailForm';
 
 const MainScreen = () => {
   const scrollViewRef = useRef(null);
@@ -28,8 +27,7 @@ const MainScreen = () => {
         ref={scrollViewRef}
         contentContainerStyle={styles.scrollContent}>
         <Header />
-        <Calender />
-        <PresentAbsenceLog />
+        <DetailForm />
       </ScrollView>
     </SafeAreaView>
   );
