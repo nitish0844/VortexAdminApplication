@@ -37,12 +37,12 @@ const GymFeeCard = () => {
       <View style={styles.card}>
         <View style={styles.splitBox}>
           <Text style={styles.feeLabel}>Monthly</Text>
-          <Text style={styles.feeAmount}>$50</Text>
+          <Text style={styles.feeAmount}>₹600</Text>
         </View>
         <View style={styles.divider}></View>
         <View style={styles.splitBox}>
           <Text style={styles.feeLabel}>Yearly</Text>
-          <Text style={styles.feeAmount}>$500</Text>
+          <Text style={styles.feeAmount}>₹6200</Text>
         </View>
       </View>
 
@@ -93,12 +93,13 @@ const GymFeeCard = () => {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#FFA500',
-    height: '26.2%',
+    height: 180, // Fixed height in pixels
     width: '90%',
     borderRadius: 20,
     alignSelf: 'center',
     justifyContent: 'flex-start',
-    top: '5%',
+    marginTop: 20, // Fixed marginTop in pixels
+    padding: 10, // Fixed padding in pixels
   },
   header: {
     backgroundColor: 'orange',
@@ -116,13 +117,13 @@ const styles = StyleSheet.create({
   },
   card: {
     height: 100,
-    width: '70%',
+    width: '80%', // Use 100% width for the card
     backgroundColor: 'white',
     flexDirection: 'row',
     alignSelf: 'center',
     borderTopWidth: 1,
     borderColor: 'gray',
-    marginTop: '8.2%',
+    marginTop: 8.5, // Fixed marginTop in pixels
     borderTopStartRadius: 12,
     borderTopEndRadius: 12,
   },
@@ -168,7 +169,7 @@ const styles = StyleSheet.create({
   overlay: {
     backgroundColor: 'rgba(255, 255, 255, 0.3)',
     flex: 1,
-    width: '150%',
+    width: '100%', // Use 100% width for the overlay
     alignSelf: 'center',
   },
   modalContent: {
@@ -176,7 +177,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingBottom: 20,
     height: '50%',
-    top: '5%',
+    marginTop: '5%', // Fixed marginTop in pixels
   },
   modalHeader: {
     alignItems: 'center',
@@ -208,7 +209,7 @@ const styles = StyleSheet.create({
     padding: 10,
     borderRadius: 8,
     alignItems: 'center',
-    top: '5%',
+    marginTop: '5%', // Fixed marginTop in pixels
   },
   saveButtonText: {
     color: '#fff',

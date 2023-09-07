@@ -10,6 +10,8 @@ import {
 import {useFocusEffect} from '@react-navigation/native';
 import Header from '../../components/Profile/Header';
 import GymFeeCard from '../../components/Profile/GymFeeCard';
+import ProfileImage from '../../components/Profile/ProfileImage';
+import ProfileSettings from '../../components/Profile/ProfileSettings';
 
 const ProfileTab = () => {
   const scrollViewRef = useRef(null);
@@ -28,6 +30,8 @@ const ProfileTab = () => {
         contentContainerStyle={styles.scrollContent}>
         <Header />
         <GymFeeCard />
+        <ProfileImage />
+        <ProfileSettings />
       </ScrollView>
     </SafeAreaView>
   );
