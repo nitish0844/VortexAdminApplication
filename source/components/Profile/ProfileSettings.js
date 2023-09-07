@@ -5,15 +5,20 @@ import Entypo from 'react-native-vector-icons/Entypo';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import VersionCheck from 'react-native-version-check';
+import TigerGymGallery from './Gallery/GymGalleryMain';
+import {useNavigation} from '@react-navigation/native';
 
 const Aboutgym = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.Container}>
       <MaterialCommunityIcons name="dumbbell" size={24} color="#fff" />
       <View style={{marginLeft: 10, flex: 1}}>
         <Text style={styles.text}>Tiger Gym</Text>
       </View>
-      <TouchableOpacity style={styles.next}>
+      <TouchableOpacity
+        style={styles.next}
+        onPress={() => navigation.navigate('Gallery')}>
         <Entypo
           name="chevron-small-right"
           size={30}
@@ -119,7 +124,7 @@ const Information = () => {
 
 const ProfileSettings = () => {
   return (
-    <View style={{flex: 1, left: 10, top: '4%', paddingBottom: '20%'}}>
+    <View style={{flex: 1, left: 10, top: '4%', paddingBottom: '10%'}}>
       <Aboutgym />
       <Text style={styles.title}>BILLING SETTINGS</Text>
       <Download />

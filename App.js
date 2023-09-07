@@ -4,6 +4,8 @@ import MainScreen from './source/screens/TabScreens/MainScreen';
 import AddMember from './source/screens/TabScreens/AddMemberTab';
 import ProfileTab from './source/screens/TabScreens/ProfileTab';
 import AttendanceTab from './source/screens/TabScreens/AttendanceTab';
+import GymGalleryMain from './source/components/Profile/Gallery/GymGalleryMain';
+
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons.js';
@@ -251,6 +253,11 @@ const App = () => {
         <Stack.Screen
           name="MainPage"
           component={MainScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Gallery"
+          component={GymGalleryMain}
           options={{headerShown: false}}
         />
       </Stack.Navigator>
