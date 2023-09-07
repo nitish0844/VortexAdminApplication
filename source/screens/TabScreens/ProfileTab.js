@@ -1,12 +1,49 @@
-import {View, Text} from 'react-native';
-import React from 'react';
+import React, {useRef} from 'react';
+import {
+  View,
+  Text,
+  StyleSheet,
+  SafeAreaView,
+  ScrollView,
+  StatusBar,
+} from 'react-native';
+import {useFocusEffect} from '@react-navigation/native';
+import Header from '../../components/Profile/Header';
+import GymFeeCard from '../../components/Profile/GymFeeCard';
 
 const ProfileTab = () => {
+  const scrollViewRef = useRef(null);
+
+  useFocusEffect(() => {
+    // Check if scrollViewRef is not null before scrolling
+    if (scrollViewRef.current) {
+      scrollViewRef.current.scrollTo({x: 0, y: 0, animated: false});
+    }
+  });
   return (
-    <View>
-      <Text>ProfileTab</Text>
-    </View>
+    <SafeAreaView style={styles.container}>
+      <StatusBar backgroundColor="#000" barStyle="light-content" />
+      <ScrollView
+        ref={scrollViewRef}
+        contentContainerStyle={styles.scrollContent}>
+        <Header />
+        <GymFeeCard />
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 
 export default ProfileTab;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#000',
+  },
+  scrollContent: {
+    flexGrow: 1,
+  },
+  componentContainer: {
+    marginBottom: 20, // Add appropriate margin between components
+  },
+});
