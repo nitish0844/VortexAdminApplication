@@ -30,24 +30,28 @@ const Aboutgym = () => {
   );
 };
 
-const Download = () => {
-  return (
-    <View style={styles.Container}>
-      <MaterialCommunityIcons name="download" size={28} color="#fff" />
-      <View style={{marginLeft: 10, flex: 1}}>
-        <Text style={styles.text}>Download as CSV</Text>
-      </View>
-      <TouchableOpacity style={styles.next}>
-        <Entypo
-          name="chevron-small-right"
-          size={30}
-          color="#fff"
-          style={styles.nextIcon}
-        />
-      </TouchableOpacity>
-    </View>
-  );
-};
+// const Download = () => {
+//   const navigation = useNavigation();
+
+//   return (
+//     <View style={styles.Container}>
+//       <MaterialCommunityIcons name="download" size={28} color="#fff" />
+//       <View style={{marginLeft: 10, flex: 1}}>
+//         <Text style={styles.text}>Download as CSV</Text>
+//       </View>
+//       <TouchableOpacity
+//         style={styles.next}
+//         onPress={() => navigation.navigate('DownloadCsv')}>
+//         <Entypo
+//           name="chevron-small-right"
+//           size={30}
+//           color="#fff"
+//           style={styles.nextIcon}
+//         />
+//       </TouchableOpacity>
+//     </View>
+//   );
+// };
 
 const Support = () => {
   return (
@@ -126,8 +130,8 @@ const ProfileSettings = () => {
   return (
     <View style={{flex: 1, left: 10, top: '4%', paddingBottom: '10%'}}>
       <Aboutgym />
-      <Text style={styles.title}>BILLING SETTINGS</Text>
-      <Download />
+      {/* <Text style={styles.title}>BILLING SETTINGS</Text>
+      <Download /> */}
       <Text style={styles.title}>SUPPORT</Text>
       <Support />
       <Information />

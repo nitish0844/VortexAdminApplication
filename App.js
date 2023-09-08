@@ -5,6 +5,9 @@ import AddMember from './source/screens/TabScreens/AddMemberTab';
 import ProfileTab from './source/screens/TabScreens/ProfileTab';
 import AttendanceTab from './source/screens/TabScreens/AttendanceTab';
 import GymGalleryMain from './source/components/Profile/Gallery/GymGalleryMain';
+// import DownloadCsv from './source/components/Profile/DownloadCSV/DownloadCsv';
+import EnterOtp from './source/screens/Login/EnterOtp';
+import Login from './source/screens/Login/Login';
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
@@ -138,16 +141,16 @@ const App = () => {
     //   configurePushNotification();
     // }, []);
 
-    // const MainStack = () => {
-    //   return (
-    //     <Stack.Navigator
-    //       // initialRouteName="Sliding"
-    //       screenOptions={{headerShown: false}}>
-    //       <Stack.Screen name="Login" component={Login} />
-    //       <Stack.Screen name="EnterOtp" component={EnterOtp} />
-    //     </Stack.Navigator>
-    //   );
-    // };
+    const MainStack = () => {
+      return (
+        <Stack.Navigator
+          // initialRouteName="Sliding"
+          screenOptions={{headerShown: false}}>
+          <Stack.Screen name="Login" component={Login} />
+          <Stack.Screen name="EnterOtp" component={EnterOtp} />
+        </Stack.Navigator>
+      );
+    };
 
     const BottomTabs = () => {
       return (
@@ -240,11 +243,11 @@ const App = () => {
     };
     return (
       <Stack.Navigator>
-        {/* <Stack.Screen
+        <Stack.Screen
           name="MainStack"
           component={MainStack}
           options={{headerShown: false}}
-        /> */}
+        />
         <Stack.Screen
           name="BottomTabs"
           component={BottomTabs}

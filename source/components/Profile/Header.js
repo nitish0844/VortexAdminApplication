@@ -3,9 +3,21 @@ import React from 'react';
 import Octicons from 'react-native-vector-icons/Octicons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons.js';
 import {useNavigation} from '@react-navigation/native';
+import auth from '@react-native-firebase/auth';
 
 const Header = () => {
   const navigation = useNavigation();
+
+  const handleLogout = async () => {
+    try {
+      await auth().signOut(); // Sign out the user
+      navigation.replace('MainStack');
+      // You can add additional actions after logout if needed
+    } catch (error) {
+      console.error('Logout Error:', error);
+    }
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.TitleContainer}>

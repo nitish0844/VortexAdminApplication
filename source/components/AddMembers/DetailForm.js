@@ -73,6 +73,7 @@ const DetailForm = () => {
         <Image
           source={{uri: imageURL}} // Use the imageURL from state
           style={styles.selectedImage}
+          onLoad={() => setShowCameraIcon(true)}
         />
       );
     }
@@ -83,8 +84,8 @@ const DetailForm = () => {
       const response = await fetch(path);
       const blob = await response.blob();
 
-      //   const storageRef = Storage().ref(`/profile/${auth().currentUser.uid}`);
-      const storageRef = Storage().ref(`/profile/test`);
+      const storageRef = Storage().ref(`/profile/${name}`);
+      // const storageRef = Storage().ref(`/profile/test`);
       await storageRef.put(blob);
 
       const downloadUrl = await storageRef.getDownloadURL();
@@ -117,9 +118,9 @@ const DetailForm = () => {
 
       // Upload user data to Firestore
       firestore()
-        .collection('users') // Change 'users' to your Firestore collection name
-        .doc(currentUser.uid)
-        .add(userData)
+        .collection('Students') // Change 'users' to your Firestore collection name
+        .doc(name)
+        .set(userData)
         .then(() => {
           console.log('User data uploaded to Firestore successfully');
           // Clear form fields
@@ -128,8 +129,8 @@ const DetailForm = () => {
           setPhoneNumber('');
           setAddress('');
           setDob('');
-          setImage(null);
           setShowCameraIcon(true);
+          setImage(null);
         })
         .catch(error => {
           console.error('Error uploading user data to Firestore:', error);

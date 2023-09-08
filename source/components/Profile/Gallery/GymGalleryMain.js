@@ -12,7 +12,6 @@ import {
 import {useFocusEffect} from '@react-navigation/native';
 import GalleryHeader from './GalleryHeader';
 import GalleryProfile from './GaleryProfile';
-import GalleryImages from './GalleryImages';
 
 const image =
   'https://img.freepik.com/premium-vector/tiger-body-builder-gym-logo-mascot_9645-2701.jpg';
@@ -35,7 +34,7 @@ const GymGalleryMain = () => {
         contentContainerStyle={styles.scrollContent}>
         <GalleryHeader />
         <GalleryProfile />
-        <GalleryImages />
+        {/* <GalleryImages /> */}
       </ScrollView>
     </SafeAreaView>
   );
